@@ -1,11 +1,421 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Prédio residencial com apartamentos mobiliados em localização privilegiada, próximo à natureza.">
+    <title>Residencial - Apartamentos à Venda</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <H1>Hello World</H1>
+
+<header class="header" id="header">
+    <div class="header-container">
+        <div class="logo">
+            <h1>Prédio Residencial</h1>
+        </div>
+        
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <nav class="nav" id="nav">
+            <ul class="nav-list">
+                <li><a href="#banner" class="nav-link">Início</a></li>
+                <li><a href="#apartamento-principal" class="nav-link">Principal</a></li>
+                <li><a href="#apartamentos-superiores" class="nav-link">Superiores</a></li>
+                <li><a href="#caracteristicas" class="nav-link">Detalhes</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="banner" id="banner">
+    <div class="banner-overlay"></div>
+    <img src="./Assets/imgs/banner.jpeg" alt="Fachada do residencial" class="banner-image">
+    <div class="banner-content">
+        <h2 class="banner-title">Seu novo imóvel</h2>
+        <p class="banner-subtitle">Conforto, natureza e qualidade de vida</p>
+    </div>
+</section>
+
+<section class="apartamento-principal" id="apartamento-principal">
+    <div class="container">
+        <div class="section-title">
+            <h2>Apartamento Principal</h2>
+            <div class="title-underline"></div>
+        </div>
+        
+        <div class="apartamento-content">
+            <div class="apartamento-descricao">
+                <h3>Conforto e Praticidade</h3>
+                    <p>
+                        Apartamento com 2 quartos, sendo 1 suíte, além de banheiro social. Conta com sala ampla integrada à cozinha em estilo americano, área de serviço/lavanderia, varanda e garagem.
+                    </p>
+                    <p>
+                        O imóvel oferece excelente espaço e está extremamente bem conservado. Localizado em uma região privilegiada e paradisíaca, próximo à Cachoeira Alta, com rampa para voo livre e cercado por natureza preservada. A vizinhança é tranquila e valorizada, ideal para quem busca qualidade de vida e contato com a natureza.
+                    </p>
+                    <p>
+                        O imóvel possui ar-condicionado, e todos os móveis permanecerão no apartamento, sendo entregues ao novo proprietário.
+                    </p>
+                <ul class="features-list">
+                    <li>✓ Sala de estar e jantar integradas estilo americano</li>
+                    <li>✓ 2 quartos sendo 1 com suíte</li>
+                    <li>✓ Varanda</li>
+                    <li>✓ Garagem</li>
+                    <li>✓ Ar-condicionado</li>
+                </ul>
+            </div>
+
+            <div class="apartamento-slider">
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <div class="slider-track" id="sliderPrincipal">
+
+                            <div class="slide">
+                                <img src="/Assets/imgs/andarPrincipal/areadeserviço.jpeg" alt="Área de serviço">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/imgs/andarPrincipal/cozinha.jpeg" alt="Cozinha">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/imgs/andarPrincipal/banheirosocial.jpeg" alt="Banheiro social">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/imgs/andarPrincipal/banheirosuite.jpeg" alt="Banheiro da suíte">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/imgs/andarPrincipal/entradasala-copa.jpeg" alt="Entrada sala de estar e copa">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/imgs/andarPrincipal/frentedopredio.jpeg" alt="Frente do prédio">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/imgs/andarPrincipal/garagem.jpeg" alt="Garagem">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/imgs/andarPrincipal/quarto2.jpeg" alt="Quarto">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/imgs/andarPrincipal/quartosuite.jpeg" alt="Quarto suíte">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/imgs/andarPrincipal/sala-copa.jpeg" alt="Sala de estar e copa">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/imgs/andarPrincipal/sala-copa2.jpeg" alt="Sala de estar e copa 2">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/imgs/andarPrincipal/varandaecalçada.jpeg" alt="Varanda e calçada">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/imgs/andarPrincipal/varandaecalçada2.jpeg" alt="Varanda e calçada 2">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- BOTÕES -->
+                    <button class="slider-btn slider-prev" id="sliderPrincipalPrev">❮</button>
+                    <button class="slider-btn slider-next" id="sliderPrincipalNext">❯</button>
+
+                    <!-- LEGENDA (ESSENCIAL) -->
+                    <div class="slider-caption" id="sliderPrincipalCaption"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="apartamentos-superiores" id="apartamentos-superiores">
+    <div class="container">
+        <div class="section-title">
+            <h2>4 Apartamentos Superiores</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="apartamento-content reverse">
+            <div class="apartamento-slider">
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <div class="slider-track" id="sliderSuperiores">
+
+                                <div class="slide">
+                                    <img src="/Assets/imgs/andarSuperior/areacomum.jpeg" alt="area comum apartamentos superior">
+                                </div>
+                                <div class="slide">
+                                    <img src="/Assets/imgs/andarSuperior/banheiro.jpeg" alt="Banheiros apartamentos superiores">
+                                </div>
+                                <div class="slide">
+                                    <img src="/Assets/imgs/andarSuperior/banheiro2.jpeg" alt="Banheiros apartamentos superiores2">
+                                </div>
+                                <div class="slide">
+                                    <img src="/Assets/imgs/andarSuperior/cozinhaamericana.jpeg" alt="Cozinha apartamentos superiores">
+                                </div>
+                                <div class="slide">
+                                    <img src="/Assets/imgs/andarSuperior/cozinhaamericana2.jpeg" alt="Cozinha apartamentos superiores2">
+                                </div>
+                                <div class="slide">
+                                    <img src="/Assets/imgs/andarSuperior/quarto.jpeg" alt="Quartos apartamentos superiores">
+                                </div>
+                                <div class="slide">
+                                    <img src="/Assets/imgs/andarSuperior/quarto2.jpeg" alt="Quartos apartamentos superiores2">
+                                </div>
+                                <div class="slide">
+                                    <img src="/Assets/imgs/andarSuperior/quarto3.jpeg" alt="Quartos apartamentos superiores3">
+                                </div>
+                                <div class="slide">
+                                    <img src="/Assets/imgs/andarSuperior/sacadadoandarcima.jpeg" alt="Sacadas dos apartamentos superiores">
+                                </div>
+                                <div class="slide">
+                                    <img src="/Assets/imgs/andarSuperior/vista.jpeg" alt="Vistas apartamentos superiores">
+                                </div>
+                                <div class="slide">
+                                    <img src="/Assets/imgs/andarSuperior/vista2.jpeg" alt="Vistas apartamentos superiores2">
+                                </div>
+                                <div class="slide video-slide">
+                                    <iframe 
+                                        id="youtubePlayer"
+                                        src="https://www.youtube.com/embed/9k8UKCLr78U?enablejsapi=1&mute=1"
+                                        title="Vídeo do imóvel"
+                                        frameborder="0"
+                                        allow="autoplay; encrypted-media"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+
+                        </div>
+                    </div>
+
+                    <button class="slider-btn slider-prev" id="sliderSuperioresPrev">❮</button>
+                    <button class="slider-btn slider-next" id="sliderSuperioresNext">❯</button>
+                </div>
+            </div>
+
+            <div class="apartamento-descricao">
+                <h3>Funcionalidade e Vista Privilegiada</h3>
+                    <p>
+                        No andar superior, há 4 apartamentos com a mesma planta. 
+                        O acesso é feito pela área superior, conforme demonstrado no vídeo.
+                    </p>
+                    <p>
+                        O imóvel conta com garagem e área comum equipada com lavanderia e banheiro. 
+                        Possui ainda um quarto amplo com sacada, ideal para apreciar a bela vista da região.
+                    </p>
+                    <p>
+                        Todos os apartamentos dispõem de ar-condicionado, e os móveis permanecerão no imóvel, 
+                        sendo entregues ao novo proprietário.
+                    </p>
+                <ul class="features-list">
+                   <li>✓ Vistas panorâmicas</li>
+                    <li>✓ Ar-condicionado</li>
+                    <li>✓ Sala de estar e jantar estilo americano</li>
+                    <li>✓ Quarto amplo com sacada</li>
+                    <li>✓ Sacada</li>
+                    <li>✓ Garagem </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="caracteristicas" id="caracteristicas">
+    <div class="container">
+        <div class="section-title">
+            <h2>Características dos Apartamentos</h2>
+            <div class="title-underline"></div>
+        </div>
+    
+        <div class="caracteristicas-grid">
+            <!-- Apartamento Principal -->
+            <div class="caracteristica-card">
+                <h3>Apartamento Principal</h3>
+                <div class="caracteristica-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                    <div>
+                        <strong>Quartos</strong>
+                        <p>2 sendo 1 suíte</p>
+                    </div>
+                </div>
+                <div class="caracteristica-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M2 7a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7z"></path>
+                        <path d="M9 5v4M15 5v4"></path>
+                    </svg>
+                    <div>
+                        <strong>Banheiros</strong>
+                        <p>2 sendo 1 suíte</p>
+                    </div>
+                </div>
+                <div class="caracteristica-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                        <path d="M9 11h6M9 15h6"></path>
+                    </svg>
+                    <div>
+                        <strong>Salas</strong>
+                        <p>1 sala/copa ampla (estilo americano)</p>
+                    </div>
+                </div>
+                <div class="caracteristica-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                        <path d="M9 11h6M9 15h6"></path>
+                    </svg>
+                    <div>
+                        <strong>Garagem</strong>
+                        <p>1 vaga</p>
+                    </div>
+                </div>
+                <div class="caracteristica-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2v20M2 12h20"></path>
+                        <circle cx="12" cy="12" r="10"></circle>
+                    </svg>
+                    <div>
+                        <strong>Ar-condicionado</strong>
+                        <p>Sistema completo</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Apartamentos Superiores -->
+            <div class="caracteristica-card">
+                <h3>Os 4 Apartamentos Superiores</h3>
+                <div class="caracteristica-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                    <div>
+                        <strong>Quartos</strong>
+                        <p>1 quarto amplo com sacada e vista paradisiaca</p>
+                    </div>
+                </div>
+                <div class="caracteristica-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M2 7a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7z"></path>
+                        <path d="M9 5v4M15 5v4"></path>
+                    </svg>
+                    <div>
+                        <strong>Banheiros</strong>
+                        <p>1 banheiro</p>
+                    </div>
+                </div>
+                <div class="caracteristica-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                        <path d="M9 11h6M9 15h6"></path>
+                    </svg>
+                    <div>
+                        <strong>Salas</strong>
+                        <p>1 sala/copa (estilo americano)</p>
+                    </div>
+                </div>
+                <div class="caracteristica-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                        <path d="M9 11h6M9 15h6"></path>
+                    </svg>
+                    <div>
+                        <strong>Garagem</strong>
+                        <p>4 vagas</p>
+                    </div>
+                </div>
+                <div class="caracteristica-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2v20M2 12h20"></path>
+                        <circle cx="12" cy="12" r="10"></circle>
+                    </svg>
+                    <div>
+                        <strong>Ar-condicionado</strong>
+                        <p>Sistema completo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contato" id="contato">
+        <div class="container">
+            <div class="section-title">
+                <h2>Entre em Contato</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contato-content">
+                <div class="contato-info">
+                    <div class="info-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:dyltom9@hotmail.com">dyltom9@hotmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <div>
+                            <h3>Telefone</h3>
+                            <p><a href="tel:+5532999840404">(32) 99984-0404</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <div>
+                            <h3>Endereço</h3>
+                            <p>Alfredo Chaves, Anchieta - ES, 29240-000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOTÃO WHATSAPP FLUTUANTE -->
+    <a href="https://wa.me/5532999840404" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contato via WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.868 1.171l-.348.214-.361-.056c-1.281-.192-2.505-.717-3.521-1.491L2.596 3.93c1.256.469 2.805.754 4.376.754h.005c3.476 0 6.721-1.495 8.955-3.878 1.594 2.117 2.446 4.791 2.446 7.659 0 .364-.025.723-.067 1.079l-.052.404.403.199c1.86.92 3.444 2.234 4.733 3.937C21.6 10.751 21.6 5.896 17.472 2.274"/>
+        </svg>
+        <span>WhatsApp</span>
+    </a>
+
+    <!-- MODAL LIGHTBOX -->
+    <div class="modal" id="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Fechar">
+                <span>✕</span>
+            </button>
+            <button class="modal-nav modal-prev" id="modalPrev" aria-label="Imagem anterior">
+                <span>❮</span>
+            </button>
+            <button class="modal-nav modal-next" id="modalNext" aria-label="Próxima imagem">
+                <span>❯</span>
+            </button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Prédio X. Todos os direitos reservados.</p>
+    </footer>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
 </body>
 </html>
